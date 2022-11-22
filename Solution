@@ -1,0 +1,361 @@
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH
+$ git clone https://github.com/JPSittinger/IronPhilipp.git
+Cloning into 'IronPhilipp'...
+warning: You appear to have cloned an empty repository.
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH
+$ touch about.txt
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH
+$ echo "I play piano" >> about.txt
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH
+$ cat about.txt
+I play piano
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH
+$ git add .
+fatal: not a git repository (or any of the parent directories): .git
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH
+$ cd IronPhilipp
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH/IronPhilipp (main)
+$ touch about.txt
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH/IronPhilipp (main)
+$ echo "I play piano" >> about.txt
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH/IronPhilipp (main)
+$ cat about.txt
+I play piano
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH/IronPhilipp (main)
+$ git add .
+warning: in the working copy of 'about.txt', LF will be replaced by CRLF the next time Git touches it
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH/IronPhilipp (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   about.txt
+
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH/IronPhilipp (main)
+$ git commit -m 'partner work'
+[main (root-commit) 03d001f] partner work
+ 1 file changed, 1 insertion(+)
+ create mode 100644 about.txt
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH/IronPhilipp (main)
+$ git status
+On branch main
+Your branch is based on 'origin/main', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+nothing to commit, working tree clean
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH/IronPhilipp (main)
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 235 bytes | 235.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/JPSittinger/IronPhilipp.git
+ * [new branch]      main -> main
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH/IronPhilipp (main)
+$ cd ..
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH
+$ git clone https://github.com/HuiyaY/IronHuiya
+Cloning into 'IronHuiya'...
+warning: You appear to have cloned an empty repository.
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH
+$ cd IronHuiya
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH/IronHuiya (main)
+$ touch philipp.txt
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH/IronHuiya (main)
+$ echo "I enrolled Ironhacks Data Analytics bootcamp because I wanted to switch field and develop deeper programming understanding." >> philipp.txt
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH/IronHuiya (main)
+$ cat philipp.txt
+I enrolled Ironhacks Data Analytics bootcamp because I wanted to switch field and develop deeper programming understanding.
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH/IronHuiya (main)
+$ git add .
+warning: in the working copy of 'philipp.txt', LF will be replaced by CRLF the next time Git touches it
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH/IronHuiya (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   philipp.txt
+
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH/IronHuiya (main)
+$ git commit -m 'PhilippText'
+[main (root-commit) 0ce5594] PhilippText
+ 1 file changed, 1 insertion(+)
+ create mode 100644 philipp.txt
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH/IronHuiya (main)
+$ git status
+On branch main
+Your branch is based on 'origin/main', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+nothing to commit, working tree clean
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH/IronHuiya (main)
+$ git push
+remote: Permission to HuiyaY/IronHuiya.git denied to JPSittinger.
+fatal: unable to access 'https://github.com/HuiyaY/IronHuiya/': The requested URL returned error: 403
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH/IronHuiya (main)
+$ cd ..
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH
+$ rm IronHuiya
+rm: cannot remove 'IronHuiya': Is a directory
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH
+$ rm -r IronHuiya
+rm: remove write-protected regular file 'IronHuiya/.git/objects/0c/e559405ad516418b9f4b585ce3e57e2b624489'? j
+rm: cannot remove 'IronHuiya/.git/objects/0c': Directory not empty
+rm: remove write-protected regular file 'IronHuiya/.git/objects/82/bbc44ad171bad365d74c6a0d6deab66deb3772'? ls
+rm: cannot remove 'IronHuiya/.git/objects/82': Directory not empty
+rm: remove write-protected regular file 'IronHuiya/.git/objects/dc/22e2b2d37378f01b74b12a39aa7e403be2fe93'?
+rm: cannot remove 'IronHuiya/.git/objects/dc': Directory not empty
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH
+$ cd IronHuiya
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH/IronHuiya
+$ rm philipp.txt
+rm: cannot remove 'philipp.txt': No such file or directory
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH/IronHuiya
+$ ls
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH/IronHuiya
+$ cd ..
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH
+$ rm -r IronHuiya
+rm: remove write-protected regular file 'IronHuiya/.git/objects/0c/e559405ad516418b9f4b585ce3e57e2b624489'?
+rm: cannot remove 'IronHuiya/.git/objects/0c': Directory not empty
+rm: remove write-protected regular file 'IronHuiya/.git/objects/82/bbc44ad171bad365d74c6a0d6deab66deb3772'?
+rm: cannot remove 'IronHuiya/.git/objects/82': Directory not empty
+rm: remove write-protected regular file 'IronHuiya/.git/objects/dc/22e2b2d37378f01b74b12a39aa7e403be2fe93'?
+rm: cannot remove 'IronHuiya/.git/objects/dc': Directory not empty
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH
+$
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH
+$ sudo rm -r IronHuiya --ignore-fail-on-non-empty folder-name-to-be-deleted
+bash: sudo: command not found
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH
+$ rm -r IronHuiya --ignor-fail-on-non-empty folder-name-to-be-deleted
+rm: unknown option -- ignor-fail-on-non-empty
+Try 'rm --help' for more information.
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH
+$ rm --help
+Usage: rm [OPTION]... [FILE]...
+Remove (unlink) the FILE(s).
+
+  -f, --force           ignore nonexistent files and arguments, never prompt
+  -i                    prompt before every removal
+  -I                    prompt once before removing more than three files, or
+                          when removing recursively; less intrusive than -i,
+                          while still giving protection against most mistakes
+      --interactive[=WHEN]  prompt according to WHEN: never, once (-I), or
+                          always (-i); without WHEN, prompt always
+      --one-file-system  when removing a hierarchy recursively, skip any
+                          directory that is on a file system different from
+                          that of the corresponding command line argument
+      --no-preserve-root  do not treat '/' specially
+      --preserve-root[=all]  do not remove '/' (default);
+                              with 'all', reject any command line argument
+                              on a separate device from its parent
+  -r, -R, --recursive   remove directories and their contents recursively
+  -d, --dir             remove empty directories
+  -v, --verbose         explain what is being done
+      --help     display this help and exit
+      --version  output version information and exit
+
+By default, rm does not remove directories.  Use the --recursive (-r or -R)
+option to remove each listed directory, too, along with all of its contents.
+
+To remove a file whose name starts with a '-', for example '-foo',
+use one of these commands:
+  rm -- -foo
+
+  rm ./-foo
+
+Note that if you use rm to remove a file, it might be possible to recover
+some of its contents, given sufficient expertise and/or time.  For greater
+assurance that the contents are truly unrecoverable, consider using shred.
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Report any translation bugs to <https://translationproject.org/team/>
+Full documentation <https://www.gnu.org/software/coreutils/rm>
+or available locally via: info '(coreutils) rm invocation'
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH
+$ git clone
+fatal: You must specify a repository to clone.
+
+usage: git clone [<options>] [--] <repo> [<dir>]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --progress            force progress reporting
+    --reject-shallow      don't clone shallow repository
+    -n, --no-checkout     don't create a checkout
+    --bare                create a bare repository
+    --mirror              create a mirror repository (implies bare)
+    -l, --local           to clone from a local repository
+    --no-hardlinks        don't use local hardlinks, always copy
+    -s, --shared          setup as shared repository
+    --recurse-submodules[=<pathspec>]
+                          initialize submodules in the clone
+    --recursive ...       alias of --recurse-submodules
+    -j, --jobs <n>        number of submodules cloned in parallel
+    --template <template-directory>
+                          directory from which templates will be used
+    --reference <repo>    reference repository
+    --reference-if-able <repo>
+                          reference repository
+    --dissociate          use --reference only while cloning
+    -o, --origin <name>   use <name> instead of 'origin' to track upstream
+    -b, --branch <branch>
+                          checkout <branch> instead of the remote's HEAD
+    -u, --upload-pack <path>
+                          path to git-upload-pack on the remote
+    --depth <depth>       create a shallow clone of that depth
+    --shallow-since <time>
+                          create a shallow clone since a specific time
+    --shallow-exclude <revision>
+                          deepen history of shallow clone, excluding rev
+    --single-branch       clone only one branch, HEAD or --branch
+    --no-tags             don't clone any tags, and make later fetches not to follow them
+    --shallow-submodules  any cloned submodules will be shallow
+    --separate-git-dir <gitdir>
+                          separate git dir from working tree
+    -c, --config <key=value>
+                          set config inside the new repository
+    --server-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+    --filter <args>       object filtering
+    --also-filter-submodules
+                          apply partial clone filters to submodules
+    --remote-submodules   any cloned submodules will use their remote-tracking branch
+    --sparse              initialize sparse-checkout file to include only files at root
+    --bundle-uri <uri>    a URI for downloading bundles before fetching from origin remote
+
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH
+$ git clone https://github.com/JPSittinger/IronHuiya
+fatal: destination path 'IronHuiya' already exists and is not an empty directory.
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH
+$ ls
+IronHuiya/  IronPhilipp/  about.txt  lab-bash/  lab-git/
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH
+$ cd IronHuiya
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH/IronHuiya
+$ ls
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH/IronHuiya
+$ pwd
+/c/Users/a/labs-IH/IronHuiya
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH/IronHuiya
+$ cd ..
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH
+$ ls
+IronPhilipp/  about.txt  lab-bash/  lab-git/
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH
+$ git clone https://github.com/JPSittinger/IronHuiya
+Cloning into 'IronHuiya'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH
+$ cd IronHuiya
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH/IronHuiya (master)
+$ ls
+about.txt
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH/IronHuiya (master)
+$ touch philipp.txt
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH/IronHuiya (master)
+$ echo "I enrolled Ironhacks Data Analytics bootcamp because I wanted to switch field and develop deeper programming understanding." >> philipp.txt
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH/IronHuiya (master)
+$ git add .
+warning: in the working copy of 'philipp.txt', LF will be replaced by CRLF the next time Git touches it
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH/IronHuiya (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   philipp.txt
+
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH/IronHuiya (master)
+$ git push
+Everything up-to-date
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH/IronHuiya (master)
+$ git commit -m 'my text'
+[master 3e26e9f] my text
+ 1 file changed, 1 insertion(+)
+ create mode 100644 philipp.txt
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH/IronHuiya (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+a@DESKTOP-6P14PJK MINGW64 ~/labs-IH/IronHuiya (master)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 382 bytes | 382.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/JPSittinger/IronHuiya
+   966dfad..3e26e9f  master -> master
